@@ -47,6 +47,9 @@ Resources:
   PublicSubnetOne:
     Type: AWS::EC2::Subnet
     Properties:
+      Tags:
+        - Key: Name
+          Value: PublicSubnetOne
       AvailabilityZone:
          Fn::Select:
          - 0
@@ -57,6 +60,9 @@ Resources:
   PublicSubnetTwo:
     Type: AWS::EC2::Subnet
     Properties:
+      Tags:
+        - Key: Name
+          Value: PublicSubnetTwo
       AvailabilityZone:
          Fn::Select:
          - 1
@@ -71,6 +77,9 @@ Resources:
   PrivateSubnetOne:
     Type: AWS::EC2::Subnet
     Properties:
+      Tags:
+        - Key: Name
+          Value: PrivateSubnetOne
       AvailabilityZone:
          Fn::Select:
          - 0
@@ -80,6 +89,9 @@ Resources:
   PrivateSubnetTwo:
     Type: AWS::EC2::Subnet
     Properties:
+      Tags:
+        - Key: Name
+          Value: PrivateSubnetTwo
       AvailabilityZone:
          Fn::Select:
          - 1
